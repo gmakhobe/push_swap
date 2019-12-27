@@ -19,9 +19,9 @@ static void		ft_pushswap(t_stack **stack_a, t_stack **stack_b)
 {
 	if (ft_stacklen(*stack_a) <= 5)
 		ft_nilltofive(stack_a, stack_b);
-	/*else if (stack_len(*stack_a) <= 100)
-		hundred_less(stack_a, stack_b);
-	else
+	else if (ft_stacklen(*stack_a) <= 100)
+		ft_a_lasthundred(stack_a, stack_b);
+	/*else
 		five_hundred_less(stack_a, stack_b);*/
 }
 

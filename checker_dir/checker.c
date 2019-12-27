@@ -15,7 +15,7 @@ static void			ft_mylstdel(t_stack **stack)
 	(*stack) = NULL;
 }
 
-void     ft_checker(char *str, t_stack **stack_a, t_stack **stack_b)
+static void     ft_checker(char *str, t_stack **stack_a, t_stack **stack_b)
 {
     if (!ft_strcmp("sa", str))
 		ft_a_swap(stack_a, 0);
