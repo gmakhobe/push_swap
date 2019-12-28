@@ -21,8 +21,8 @@ static void		ft_pushswap(t_stack **stack_a, t_stack **stack_b)
 		ft_nilltofive(stack_a, stack_b);
 	else if (ft_stacklen(*stack_a) <= 100)
 		ft_a_lasthundred(stack_a, stack_b);
-	/*else
-		five_hundred_less(stack_a, stack_b);*/
+	else
+		ft_a_lsthundred(stack_a, stack_b);
 }
 
 int				main(int argc, char **argv)

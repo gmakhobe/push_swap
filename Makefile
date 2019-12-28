@@ -13,7 +13,10 @@ SRC_PS			= src/auto_sort_nilltofive.c \
 				  src/ft_a_nillfour.c \
 				  src/ft_a_detector.c \
 				  src/ft_a_nillfive.c \
-				  src/ft_a_lasthundred.c
+				  src/ft_a_range.c \
+				  src/ft_a_lasthundred.c \
+				  src/ft_a_lsthundred.c
+
 
 CHECKER_DIR		= checker_dir/checker.c
 PUSHSWAP_DIR	= push_swap_dir/push_swap.c
