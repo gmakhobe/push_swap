@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/06 16:24:03 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 16:29:52 by gmakhobe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/checker.h"
 
-int			ft_issorted(t_stack *stack)
+int				ft_issorted(t_stack *stack)
 {
 	t_stack		*temp;
 
@@ -14,7 +26,7 @@ int			ft_issorted(t_stack *stack)
 	return (1);
 }
 
-int         ft_hasdoubles(t_stack *stack)
+int				ft_hasdoubles(t_stack *stack)
 {
 	t_stack		*temp1;
 	t_stack		*temp2;
@@ -34,20 +46,20 @@ int         ft_hasdoubles(t_stack *stack)
 	return (0);
 }
 
-int			ft_stacklen(t_stack *stack)
+int				ft_stacklen(t_stack *stack)
 {
-	int		i;
+	int			i;
 
 	i = 0;
 	while (stack != NULL)
 	{
 		stack = stack->next;
-        i++;
+		i++;
 	}
 	return (i);
 }
 
-void        ft_fdpointer(char **ptr)
+void			ft_fdpointer(char **ptr)
 {
 	int			i;
 
@@ -61,7 +73,7 @@ void        ft_fdpointer(char **ptr)
 	ptr = NULL;
 }
 
-void        ft_error(void)
+void			ft_error(void)
 {
 	ft_putendl_fd("Error", 2);
 	exit(0);

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/06 11:02:05 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 11:02:27 by gmakhobe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/checker.h"
 
-static void			ft_mylstdel(t_stack **stack)
+static void		ft_mylstdel(t_stack **stack)
 {
 	t_stack		*main;
 	t_stack		*temp;

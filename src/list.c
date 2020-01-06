@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   list.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/06 16:00:25 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 16:04:07 by gmakhobe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/checker.h"
 
 static void		ft_mylstadd(t_stack **stack, int num)
@@ -21,7 +33,7 @@ static void		ft_mylstadd(t_stack **stack, int num)
 
 void			ft_mynewlist(int argc, char **argv, t_stack **stack)
 {
-    int			i;
+	int			i;
 	int			j;
 	char		**list;
 

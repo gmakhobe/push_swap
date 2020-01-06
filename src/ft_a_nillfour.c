@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_a_nillfour.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/06 15:51:32 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 15:53:02 by gmakhobe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/checker.h"
 
-void		ft_a_nillfour(t_stack **stack_a, t_stack **stack_b)
+void			ft_a_nillfour(t_stack **stack_a, t_stack **stack_b)
 {
 	int			lower;
 	t_stack		*temp;

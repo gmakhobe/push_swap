@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gmakhobe <gmakhobe@student.wethinkcode.    +#+  +:+       +#+        */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 09:25:17 by gmakhobe          #+#    #+#             */
-/*   Updated: 2019/12/15 11:36:45 by gmakhobe         ###   ########.fr       */
+/*   Created: 2020/01/06 11:18:38 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 15:10:32 by gmakhobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,4 +86,9 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+typedef struct		s_stack
+{
+	int				num;
+	struct s_stack	*next;
+}					t_stack;
 #endif

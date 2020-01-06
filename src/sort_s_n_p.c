@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_s_n_p.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/06 16:19:22 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 16:22:54 by gmakhobe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/checker.h"
 
-void		ft_a_push(t_stack **from, t_stack **to, int print)
+void			ft_a_push(t_stack **from, t_stack **to, int print)
 {
 	t_stack		*temp1;
 	t_stack		*temp2;
@@ -24,9 +36,9 @@ void		ft_a_push(t_stack **from, t_stack **to, int print)
 		ft_putendl("pb");
 }
 
-void		ft_a_swap(t_stack **stack, int print)
+void			ft_a_swap(t_stack **stack, int print)
 {
-	int		temp;
+	int			temp;
 
 	if (ft_stacklen((*stack)) == 0)
 		return ;
@@ -42,7 +54,7 @@ void		ft_a_swap(t_stack **stack, int print)
 		ft_putendl("sb");
 }
 
-void		ft_a_swapab(t_stack **stack_a, t_stack **stack_b, int print)
+void			ft_a_swapab(t_stack **stack_a, t_stack **stack_b, int print)
 {
 	ft_a_swap(stack_a, 0);
 	ft_a_swap(stack_b, 0);

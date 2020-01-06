@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_a_lsthundred.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/06 15:42:19 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 15:50:17 by gmakhobe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/checker.h"
 
 static void		ft_chunks(t_stack **stack_a, t_stack **stack_b)
@@ -9,17 +21,17 @@ static void		ft_chunks(t_stack **stack_a, t_stack **stack_b)
 	lower = ft_a_detector(*stack_a, "rln");
 	higher = ft_a_detector(*stack_a, "rhn");
 	val = ((higher - lower) / 11);
-	ft_a_range(stack_a, stack_b, lower, (lower + val));
-	ft_a_range(stack_a, stack_b, (lower + val + 1), (lower + (val * 2)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 2) + 1), (lower + (val * 3)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 3) + 1), (lower + (val * 4)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 4) + 1), (lower + (val * 5)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 5) + 1), (lower + (val * 6)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 6) + 1), (lower + (val * 7)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 7) + 1), (lower + (val * 8)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 8) + 1), (lower + (val * 9)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 9) + 1), (lower + (val * 10)));
-	ft_a_range(stack_a, stack_b, (lower + (val * 10) + 1), higher);
+	ft_range(stack_a, stack_b, lower, (lower + val));
+	ft_range(stack_a, stack_b, (lower + val + 1), (lower + (val * 2)));
+	ft_range(stack_a, stack_b, (lower + (val * 2) + 1), (lower + (val * 3)));
+	ft_range(stack_a, stack_b, (lower + (val * 3) + 1), (lower + (val * 4)));
+	ft_range(stack_a, stack_b, (lower + (val * 4) + 1), (lower + (val * 5)));
+	ft_range(stack_a, stack_b, (lower + (val * 5) + 1), (lower + (val * 6)));
+	ft_range(stack_a, stack_b, (lower + (val * 6) + 1), (lower + (val * 7)));
+	ft_range(stack_a, stack_b, (lower + (val * 7) + 1), (lower + (val * 8)));
+	ft_range(stack_a, stack_b, (lower + (val * 8) + 1), (lower + (val * 9)));
+	ft_range(stack_a, stack_b, (lower + (val * 9) + 1), (lower + (val * 10)));
+	ft_range(stack_a, stack_b, (lower + (val * 10) + 1), higher);
 }
 
 void			ft_a_lsthundred(t_stack **stack_a, t_stack **stack_b)

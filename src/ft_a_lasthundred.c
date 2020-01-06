@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_a_lasthundred.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmakhobe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/06 15:36:05 by gmakhobe          #+#    #+#             */
+/*   Updated: 2020/01/06 15:40:57 by gmakhobe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/checker.h"
 
 static void		ft_chunks(t_stack **stack_a, t_stack **stack_b)
@@ -7,13 +19,13 @@ static void		ft_chunks(t_stack **stack_a, t_stack **stack_b)
 	int			half;
 
 	lower = ft_a_detector(*stack_a, "rln");
-	higher= ft_a_detector(*stack_a, "rhn");
+	higher = ft_a_detector(*stack_a, "rhn");
 	half = ((higher - lower) / 5);
-	ft_a_range(stack_a, stack_b, lower, (lower + half));
-	ft_a_range(stack_a, stack_b, (lower + half + 1), (lower + (half * 2)));
-	ft_a_range(stack_a, stack_b, (lower + (half * 2) + 1), (lower + (half * 3)));
-	ft_a_range(stack_a, stack_b, (lower + (half * 3) + 1), (lower + (half * 4)));
-	ft_a_range(stack_a, stack_b, (lower + (half * 4) + 1), higher);
+	ft_range(stack_a, stack_b, lower, (lower + half));
+	ft_range(stack_a, stack_b, (lower + half + 1), (lower + (half * 2)));
+	ft_range(stack_a, stack_b, (lower + (half * 2) + 1), (lower + (half * 3)));
+	ft_range(stack_a, stack_b, (lower + (half * 3) + 1), (lower + (half * 4)));
+	ft_range(stack_a, stack_b, (lower + (half * 4) + 1), higher);
 }
 
 void			ft_a_lasthundred(t_stack **stack_a, t_stack **stack_b)
